@@ -202,6 +202,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\AddNameColumnToApplicationUser.cs" />
+    <Compile Include="Migrations\AddNameColumnToApplicationUser.Designer.cs">
+      <DependentUpon>AddNameColumnToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\PopulateCategoryTable.cs" />
     <Compile Include="Migrations\PopulateCategoryTable.Designer.cs">
       <DependentUpon>PopulateCategoryTable.cs</DependentUpon>
@@ -298,6 +302,9 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Migrations\AddNameColumnToApplicationUser.resx">
+      <DependentUpon>AddNameColumnToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\PopulateCategoryTable.resx">
       <DependentUpon>PopulateCategoryTable.cs</DependentUpon>
     </EmbeddedResource>
