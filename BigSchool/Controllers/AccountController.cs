@@ -149,7 +149,7 @@ namespace BigSchool.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid)  
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email, /*Name = model.Name*/ };
                 var result = await UserManager.CreateAsync(user, model.Password);
