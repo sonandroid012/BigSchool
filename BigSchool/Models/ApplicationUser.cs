@@ -1,4 +1,4 @@
-using BigSchool.Models;
+﻿using BigSchool.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
@@ -14,7 +14,7 @@ namespace BigSchool.Migrations
 {
     public partial class ApplicationUser : IdentityUser //DbMigration
     {
-    
+
 
         /* public override void Up()
          {

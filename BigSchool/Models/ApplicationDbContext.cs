@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
+﻿using BigSchool.Migrations;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -12,8 +13,8 @@ namespace BigSchool.Models
     {
         public DbSet<Course> Courses { get; set; }
         public DbSet<Category> Categories { get; set; }
-        public DbSet<Attendance> Attendances { get; set; }
-        public DbSet<Following> Follwings { get; set; }
+        //public DbSet<Attendance> Attendances { get; set; }
+        //public DbSet<Following> Follwings { get; set; }
     
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
@@ -41,5 +42,5 @@ namespace BigSchool.Models
                 .WillCascadeOnDelete(false);
             base.OnModelCreating(modelBuilder);
         }
-    }
+}
 }

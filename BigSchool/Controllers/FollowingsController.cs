@@ -19,20 +19,20 @@ namespace BigSchool.Controllers
             dbcontext = new ApplicationDbContext();
         }
 
-        public IHttpActionResult Follow(FollowingDto followingDto)
-        {
-            var userId = User.Identity.GetUserId();
-            if (dbcontext.Follwings.Any(f => f.FollowerId == userId && f.FolloweeId == followingDto.FollweeId))
-                return BadRequest("Following already exists!");
-            var folowing = new Following
-            {
-                FollowerId = userId,
-                FolloweeId = followingDto.FollweeId
-            };
-            dbcontext.Follwings.Add(folowing);
-            dbcontext.SaveChanges();
-            return Ok();
-        }
+        //public IHttpActionResult Follow(FollowingDto followingDto)
+        //{
+        //    var userId = User.Identity.GetUserId();
+        //    if (dbcontext.Follwings.Any(f => f.FollowerId == userId && f.FolloweeId == followingDto.FollweeId))
+        //        return BadRequest("Following already exists!");
+        //    var folowing = new Following
+        //    {
+        //        FollowerId = userId,
+        //        FolloweeId = followingDto.FollweeId
+        //    };
+        //    dbcontext.Follwings.Add(folowing);
+        //    dbcontext.SaveChanges();
+        //    return Ok();
+        //}
     }
 }
  
