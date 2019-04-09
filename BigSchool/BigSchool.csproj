@@ -209,28 +209,13 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\Api\CoursesController.cs" />
-    <Compile Include="Controllers\AttendancesController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\FollowingsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="DTOs\AttendanceDto.cs" />
     <Compile Include="DTOs\FollowingDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\AddFollowingsTable.cs" />
-    <Compile Include="Migrations\AddFollowingsTable.Designer.cs">
-      <DependentUpon>AddFollowingsTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\AddAttendance.cs" />
-    <Compile Include="Migrations\AddAttendance.Designer.cs">
-      <DependentUpon>AddAttendance.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\AddNameColumnToApplicationUser.cs" />
-    <Compile Include="Migrations\AddNameColumnToApplicationUser.Designer.cs">
-      <DependentUpon>AddNameColumnToApplicationUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\PopulateCategoryTable.cs" />
     <Compile Include="Migrations\PopulateCategoryTable.Designer.cs">
@@ -240,12 +225,16 @@
     <Compile Include="Migrations\CreateTableCourse.Designer.cs">
       <DependentUpon>CreateTableCourse.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\InitialModel.cs" />
+    <Compile Include="Migrations\InitialModel.Designer.cs">
+      <DependentUpon>InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ApplicationUser.Designer.cs">
       <DependentUpon>ApplicationUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Attendance.cs" />
     <Compile Include="Models\Category.cs" />
@@ -337,20 +326,14 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\AddFollowingsTable.resx">
-      <DependentUpon>AddFollowingsTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\AddAttendance.resx">
-      <DependentUpon>AddAttendance.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\AddNameColumnToApplicationUser.resx">
-      <DependentUpon>AddNameColumnToApplicationUser.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\PopulateCategoryTable.resx">
       <DependentUpon>PopulateCategoryTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\CreateTableCourse.resx">
       <DependentUpon>CreateTableCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\InitialModel.resx">
+      <DependentUpon>InitialModel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Models\ApplicationUser.resx">
       <DependentUpon>ApplicationUser.cs</DependentUpon>

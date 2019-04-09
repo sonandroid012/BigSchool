@@ -10,6 +10,7 @@ namespace BigSchool.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
+            ContextKey = "BigSchool.Models.ApplicationDbContext";
         }
 
         protected override void Seed(BigSchool.Models.ApplicationDbContext context)

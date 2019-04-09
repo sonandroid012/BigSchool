@@ -13,7 +13,7 @@ namespace BigSchool.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201903280238217_PopulateCategoryTable"; }
+            get { return "201904090731208_PopulateCategoryTable"; }
         }
         
         string IMigrationMetadata.Source
