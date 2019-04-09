@@ -88,7 +88,7 @@ namespace BigSchool.Controllers
             var viewModel = new CourseViewModel
             {
                 Categories = dbcontext.Categories.ToList(),
-                Date = course.DateTime.ToString("dd/MM/YYYY"),
+                Date = course.DateTime.ToString("dd/MM/yyyy"),
                 Time = course.DateTime.ToString("HH:mm"),
                 Category = course.CategoryId,
                 Place = course.Place,
