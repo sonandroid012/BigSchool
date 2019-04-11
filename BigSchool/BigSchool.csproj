@@ -220,10 +220,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\AddIsCanceledColumnToCourse.cs" />
-    <Compile Include="Migrations\AddIsCanceledColumnToCourse.Designer.cs">
-      <DependentUpon>AddIsCanceledColumnToCourse.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\AddFollowingsTable.cs" />
     <Compile Include="Migrations\AddFollowingsTable.Designer.cs">
       <DependentUpon>AddFollowingsTable.cs</DependentUpon>
@@ -231,10 +227,6 @@
     <Compile Include="Migrations\AddAttendance.cs" />
     <Compile Include="Migrations\AddAttendance.Designer.cs">
       <DependentUpon>AddAttendance.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\AddNameColumnToApplicationUser.cs" />
-    <Compile Include="Migrations\AddNameColumnToApplicationUser.Designer.cs">
-      <DependentUpon>AddNameColumnToApplicationUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\PopulateCategoryTable.cs" />
     <Compile Include="Migrations\PopulateCategoryTable.Designer.cs">
@@ -341,17 +333,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\AddIsCanceledColumnToCourse.resx">
-      <DependentUpon>AddIsCanceledColumnToCourse.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\AddFollowingsTable.resx">
       <DependentUpon>AddFollowingsTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\AddAttendance.resx">
       <DependentUpon>AddAttendance.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\AddNameColumnToApplicationUser.resx">
-      <DependentUpon>AddNameColumnToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\PopulateCategoryTable.resx">
       <DependentUpon>PopulateCategoryTable.cs</DependentUpon>

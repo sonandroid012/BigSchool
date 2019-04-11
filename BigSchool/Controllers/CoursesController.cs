@@ -21,7 +21,7 @@ namespace BigSchool.Controllers
         [Authorize]
         public ActionResult Create()
         {
-            var viewModel = new CourseViewModel()
+            var viewModel = new CourseViewModel
             {
                 Categories = dbcontext.Categories.ToList(),
                 Heading = "Add Course"
@@ -50,7 +50,7 @@ namespace BigSchool.Controllers
 
             return RedirectToAction("Index", "Home");
         }
-
+        
         [Authorize]
         public ActionResult Attending()
         {
